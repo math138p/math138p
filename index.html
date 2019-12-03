@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana;
+}
+
+/* Style the header */
+header {
+  background-color: Dimgrey;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: tomato;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: lightgrey;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: dodgerblue;
+  height: 400px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h2>Canada</h2>
+  <h4>Toronto</h4>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="file:///Users/mathildewarming/Desktop/alt%20om%20hjemmeside%202.0/Om%20Canada2.0.html">Om Canada</a></li>
+      <li><a href="file:///Users/mathildewarming/Desktop/alt%20om%20hjemmeside%202.0/GCP2.0.html">GCP</a></li>
+      <li><a href="file:///Users/mathildewarming/Desktop/alt%20om%20hjemmeside%202.0/Homestay2.0.html">Homestay</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h1>GCP</h1>
+    <p>GCP er det der former det faglige fokus for jeres tur - vær opmærksomme i undervisningen hvis I vil vinde æren for den bedste film.
+<br><br/>
+      Det er vigtigt at forstå at forudantagelser og forforståelsen for værtslandet ikke altid er korrekte og at det kan være en hindring for forståelsen af landet hvis man fx regner med at alle Canadiere er progressive, alle immigrerede familier er ambitiøse på deres børns vejne eller andet. Kulturforståelse handler i bund og grund om at kunne reflekterer over interaktioner med fremmede kulturer og at være i stand til at møde folk med et åbent og fordomsfrit sindelag.</p>
+  </article>
+</section>
+
+<footer>
+  <p>  Skrevet af Mathilde Warming<br>
+  Visit us at:<br>
+<a href="kortlink.dk/23hc6">Logbog</a><br>
+  Tietgensgade 74, København<br>
+  Danmark</p>
+</footer>
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg" alt="canada flag" width="104" height="142">
+
+</body>
+</html>
